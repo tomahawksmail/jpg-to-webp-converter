@@ -9,13 +9,6 @@ desktop = pathlib.Path(path)
 end = '.webp'
 def obxodFile(path):
 
-    # for file in os.listdir(path):
-    #     file = path+'\\'+file
-    #     newfile = file.split('.')[0]
-    #     newfile = newfile+end
-    #     cwebp(input_image=file, output_image=newfile, option="-q 80", logging="-v")
-    #     print(file, newfile)
-    # print('done')
     i = 0
     for file in desktop.rglob("*"):
         if file.is_file():
